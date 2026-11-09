@@ -8,9 +8,9 @@ Give it a website, a research question and a budget. Start with a small pilot or
 
 [Русский](docs/README.ru.md) · [Installation](docs/installation.md) · [Sample report](examples/report.html) · [Report screenshot](docs/assets/report-screenshot.png) · [How metrics work](skills/audience/references/metrics.md)
 
-[![Illustration of an Audience report: fictional demo data, not a screenshot.](docs/assets/report-preview.png)](examples/report.html)
+[![Audience: AI agents test your product, find where they get stuck, and show what to fix.](docs/assets/audience-cover.png)](examples/report.html)
 
-*The illustration uses fictional demonstration data; it is not a product screenshot. Download the sample HTML and open it locally to explore the interactive report.*
+*Download the sample HTML and open it locally to explore the interactive report.*
 
 ## Start with a product question
 
