@@ -8,7 +8,7 @@
 
 [English](../README.md) · [Установка](installation.md) · [Пример отчёта](../examples/report.html) · [Метрики](../skills/audience/references/metrics.md)
 
-[![Audience: AI-агенты тестируют ваш продукт, находят трудности и показывают, что улучшить.](assets/audience-cover.png)](../examples/report.html)
+[![Audience: AI-агенты тестируют ваш продукт, находят трудности и показывают, что улучшить.](docs/assets/Изображение%20ChatGPT%209%20нояб.%202026%20г.%2C%2010_42_58.png)](../examples/report.html)
 
 *Скачайте HTML и откройте его в браузере, чтобы посмотреть интерактивный отчёт.*
 
