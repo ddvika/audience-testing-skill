@@ -6,7 +6,7 @@ Put dozens or hundreds of AI agents in the role of your users. Audience is an op
 
 Give it a website, a research question and a budget. Start with a small pilot or request up to **1,000 personas**, using your choice of OpenRouter models. Budget, time and browser capacity determine how many journeys finish; this is simulated user research, not a recruited human panel.
 
-[Русский](docs/README.ru.md) · [Installation](docs/installation.md) · [Sample report](examples/report.html) · [Report screenshot]([docs/assets/report-screenshot.png](https://github.com/ddvika/audience-testing-skill/blob/main/docs/assets/Изображение%20ChatGPT%209%20нояб.%202026%20г.%2C%2010_42_58.png)) · [How metrics work](skills/audience/references/metrics.md)
+[Русский](docs/README.ru.md) · [Installation](docs/installation.md) · [Sample report](examples/report.html) · [Report screenshot](docs/assets/report-screenshot.png) · [How metrics work](skills/audience/references/metrics.md)
 
 [![Audience: AI agents test your product, find where they get stuck, and show what to fix.](docs/assets/Изображение%20ChatGPT%209%20нояб.%202026%20г.%2C%2010_42_58.png)](examples/report.html)
 *Download the sample HTML and open it locally to explore the interactive report.*
