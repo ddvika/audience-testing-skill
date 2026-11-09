@@ -1,0 +1,28 @@
+name: Tests
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Unit and protocol tests (no API key)
+        run: python -m unittest discover -s skills/audience/scripts/tests -q
+      - name: Build and install the package
+        run: |
+          python -m pip wheel --no-deps . --wheel-dir dist
+          python -m pip install --no-deps dist/*.whl
+      - name: Check CLI and offline demo
+        run: |
+          audience --help
+          python examples/generate_demo.py
+          audience report examples/demo-run.json --output reports/ci

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audience-product-testing"
+dynamic = ["version"]
+description = "AI users test your product. Evidence-linked product reports powered by OpenRouter."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["ai-agents", "product-testing", "synthetic-users", "ux-research", "openrouter", "agent-skills"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Testing",
+]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.56,<2"]
+
+[project.urls]
+Repository = "https://github.com/ddvika/audience-testing-skill"
+Documentation = "https://github.com/ddvika/audience-testing-skill/blob/main/docs/installation.md"
+Issues = "https://github.com/ddvika/audience-testing-skill/issues"
+
+[project.scripts]
+audience = "audience:main"
+
+[tool.setuptools]
+package-dir = {"" = "skills/audience/scripts"}
+py-modules = ["audience"]
+
+[tool.setuptools.dynamic]
+version = {attr = "audience_core.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["skills/audience/scripts"]
+include = ["audience_core*"]
+
+[tool.setuptools.package-data]
+audience_core = ["report_assets/*.css", "report_assets/*.js"]

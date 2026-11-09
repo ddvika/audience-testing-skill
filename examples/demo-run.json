@@ -1,0 +1,1467 @@
+{
+  "schema_version": "1.0",
+  "id": "audience-public-demo",
+  "created_at": "2026-11-09T00:00:00Z",
+  "demo": true,
+  "synthetic_fixture": true,
+  "plan": {
+    "demo": true,
+    "url": "https://seatly.example",
+    "product_summary": "Seatly · вымышленный сервис выбора билетов",
+    "task": "Проверить путь от поиска события до понятного выбора билетов, без покупки. Это полностью вымышленный пример отчёта.",
+    "audience": "Вымышленные покупатели билетов с разными задачами и ограничениями.",
+    "budget_usd": 0,
+    "scenario_modes": [
+      "first_use",
+      "resume"
+    ],
+    "report_focus": [
+      "usability",
+      "conversion",
+      "retention"
+    ],
+    "personas": [
+      {
+        "id": "ira",
+        "name": "Ира",
+        "group_id": "quick",
+        "segment": "Выбрать быстро",
+        "selection_reason": "Вымышленные покупатели с ограниченным временем: проверяем короткий путь до понятного выбора.",
+        "goal": "Выбрать два билета на вечерний концерт за несколько минут.",
+        "device": "mobile",
+        "model": "fixture/scripted-persona",
+        "experience": "Вымышленный профиль для демонстрации отчёта",
+        "scenario_modes": [
+          "first_use"
+        ],
+        "scenario_goals": {
+          "first_use": "Выбрать два билета на вечерний концерт за несколько минут.",
+          "resume": "Продолжить сохранённый выбор без повторного поиска."
+        },
+        "success_criteria": [
+          "Событие и места выбраны",
+          "Понятна итоговая сумма",
+          "Понятен следующий шаг; покупка не выполняется"
+        ]
+      },
+      {
+        "id": "sasha",
+        "name": "Саша",
+        "group_id": "quick",
+        "segment": "Выбрать быстро",
+        "selection_reason": "Вымышленные покупатели с ограниченным временем: проверяем короткий путь до понятного выбора.",
+        "goal": "Выбрать два соседних места и понять, готовы ли они к оплате.",
+        "device": "desktop",
+        "model": "fixture/scripted-persona",
+        "experience": "Вымышленный профиль для демонстрации отчёта",
+        "scenario_modes": [
+          "first_use"
+        ],
+        "scenario_goals": {
+          "first_use": "Выбрать два соседних места и понять, готовы ли они к оплате.",
+          "resume": "Продолжить сохранённый выбор без повторного поиска."
+        },
+        "success_criteria": [
+          "Событие и места выбраны",
+          "Понятна итоговая сумма",
+          "Понятен следующий шаг; покупка не выполняется"
+        ]
+      },
+      {
+        "id": "dasha",
+        "name": "Даша",
+        "group_id": "compare",
+        "segment": "Сравнить условия",
+        "selection_reason": "Вымышленные покупатели с фиксированным бюджетом: проверяем итоговую цену и условия билета.",
+        "goal": "Сравнить варианты и уложиться в общий бюджет на два билета.",
+        "device": "mobile",
+        "model": "fixture/scripted-persona",
+        "experience": "Вымышленный профиль для демонстрации отчёта",
+        "scenario_modes": [
+          "first_use"
+        ],
+        "scenario_goals": {
+          "first_use": "Сравнить варианты и уложиться в общий бюджет на два билета.",
+          "resume": "Продолжить сохранённый выбор без повторного поиска."
+        },
+        "success_criteria": [
+          "Событие и места выбраны",
+          "Понятна итоговая сумма",
+          "Понятен следующий шаг; покупка не выполняется"
+        ]
+      },
+      {
+        "id": "maksim",
+        "name": "Максим",
+        "group_id": "compare",
+        "segment": "Сравнить условия",
+        "selection_reason": "Вымышленные покупатели с фиксированным бюджетом: проверяем итоговую цену и условия билета.",
+        "goal": "Проверить полную стоимость выбранных билетов до оплаты.",
+        "device": "desktop",
+        "model": "fixture/scripted-persona",
+        "experience": "Вымышленный профиль для демонстрации отчёта",
+        "scenario_modes": [
+          "first_use"
+        ],
+        "scenario_goals": {
+          "first_use": "Проверить полную стоимость выбранных билетов до оплаты.",
+          "resume": "Продолжить сохранённый выбор без повторного поиска."
+        },
+        "success_criteria": [
+          "Событие и места выбраны",
+          "Понятна итоговая сумма",
+          "Понятен следующий шаг; покупка не выполняется"
+        ]
+      },
+      {
+        "id": "lena",
+        "name": "Лена",
+        "group_id": "return",
+        "segment": "Продолжить выбор",
+        "selection_reason": "Вымышленные покупатели, которые выбирают вместе с другим человеком: проверяем сохранение выбора и возврат к нему.",
+        "goal": "Выбрать места, обсудить их с другом и вернуться к выбору.",
+        "device": "mobile",
+        "model": "fixture/scripted-persona",
+        "experience": "Вымышленный профиль для демонстрации отчёта",
+        "scenario_modes": [
+          "first_use",
+          "resume"
+        ],
+        "scenario_goals": {
+          "first_use": "Выбрать места, обсудить их с другом и вернуться к выбору.",
+          "resume": "Продолжить сохранённый выбор без повторного поиска."
+        },
+        "success_criteria": [
+          "Событие и места выбраны",
+          "Понятна итоговая сумма",
+          "Понятен следующий шаг; покупка не выполняется"
+        ]
+      },
+      {
+        "id": "oleg",
+        "name": "Олег",
+        "group_id": "return",
+        "segment": "Продолжить выбор",
+        "selection_reason": "Вымышленные покупатели, которые выбирают вместе с другим человеком: проверяем сохранение выбора и возврат к нему.",
+        "goal": "Сравнить два концерта и продолжить с сохранённой подборки.",
+        "device": "desktop",
+        "model": "fixture/scripted-persona",
+        "experience": "Вымышленный профиль для демонстрации отчёта",
+        "scenario_modes": [
+          "first_use",
+          "resume"
+        ],
+        "scenario_goals": {
+          "first_use": "Сравнить два концерта и продолжить с сохранённой подборки.",
+          "resume": "Продолжить сохранённый выбор без повторного поиска."
+        },
+        "success_criteria": [
+          "Событие и места выбраны",
+          "Понятна итоговая сумма",
+          "Понятен следующий шаг; покупка не выполняется"
+        ]
+      }
+    ],
+    "experiment_design": {
+      "groups": [
+        {
+          "id": "quick",
+          "name": "Выбрать быстро",
+          "selection_reason": "Вымышленные покупатели с ограниченным временем: проверяем короткий путь до понятного выбора."
+        },
+        {
+          "id": "compare",
+          "name": "Сравнить условия",
+          "selection_reason": "Вымышленные покупатели с фиксированным бюджетом: проверяем итоговую цену и условия билета."
+        },
+        {
+          "id": "return",
+          "name": "Продолжить выбор",
+          "selection_reason": "Вымышленные покупатели, которые выбирают вместе с другим человеком: проверяем сохранение выбора и возврат к нему."
+        }
+      ],
+      "research_question": "Понятны ли итоговая цена, результат выбора и способ вернуться к нему?"
+    },
+    "assumptions": [
+      "Все данные написаны вручную для демонстрации структуры отчёта; они не получены от людей, моделей или реального сайта.",
+      "Шесть вымышленных персон, шесть первых визитов и два моделируемых продолжения. Повторные визиты не являются измерением удержания.",
+      "fixture/scripted-persona — условное имя, а не доступная модель OpenRouter. Платных вызовов нет.",
+      "seatly.example — зарезервированный демонстрационный адрес. Переходы по внешним ссылкам не нужны для чтения отчёта."
+    ]
+  },
+  "sessions": [
+    {
+      "id": "ira-first",
+      "persona_id": "ira",
+      "mode": "first_use",
+      "model": "fixture/scripted-persona",
+      "status": "completed",
+      "events": [
+        {
+          "id": "ira-first:e1",
+          "action": {
+            "type": "click",
+            "target": "send"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/ira",
+            "title": "Seatly · демонстрационный продукт",
+            "text": "Найди два билета на небольшой джазовый концерт в субботу после 19:00. Хочу быстро выбрать, до 6 000 ₽ за двоих.",
+            "task_state": "running",
+            "viewport": {
+              "width": 390,
+              "height": 900
+            },
+            "elements": [
+              {
+                "id": "send",
+                "role": "button",
+                "name": "Отправить"
+              }
+            ]
+          },
+          "result": {
+            "status": "ok",
+            "task_started": true
+          }
+        },
+        {
+          "id": "ira-first:e2",
+          "action": {
+            "type": "click",
+            "target": "choose-seats"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/ira",
+            "title": "Места на концерт",
+            "text": "Вечер джаза\nДва билета — 4 400 ₽\nВыбрать места",
+            "elements": [
+              {
+                "id": "choose-seats",
+                "role": "button",
+                "name": "Выбрать места"
+              }
+            ]
+          },
+          "result": {
+            "status": "ok"
+          }
+        },
+        {
+          "id": "ira-first:e3",
+          "action": {
+            "type": "observe"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/ira",
+            "title": "Результат выбора",
+            "text": "Подходит «Вечер джаза», суббота, 19:30. Небольшой зал, 120 мест.\nДва соседних места: ряд 5, места 7 и 8. Цена билетов — 4 400 ₽. На следующем шаге сервисный сбор — 400 ₽. Итого — 4 800 ₽.\nВыбраны: два билета, ряд 5, места 7 и 8. Следующий шаг — проверить заказ. Оплата ещё не выполнена.",
+            "task_state": "completed",
+            "elements": []
+          },
+          "result": {
+            "status": "ok",
+            "task_completed": true
+          }
+        }
+      ],
+      "task_started": true,
+      "task_completed": true,
+      "task_started_event_id": "ira-first:e1",
+      "task_completed_event_id": "ira-first:e3",
+      "conversation_url": "https://seatly.example/chat/ira",
+      "transcript": {
+        "source": "authored_demo_fixture",
+        "capture_status": "complete",
+        "product_name": "Seatly",
+        "capture_note": "Авторский пример. Все сообщения, действия и оценки вымышлены; реальный продукт не тестировался.",
+        "messages": [
+          {
+            "role": "user",
+            "text": "Найди два билета на небольшой джазовый концерт в субботу после 19:00. Хочу быстро выбрать, до 6 000 ₽ за двоих.",
+            "event_ids": [
+              "ira-first:e1"
+            ]
+          },
+          {
+            "role": "assistant",
+            "text": "Подходит «Вечер джаза», суббота, 19:30. Небольшой зал, 120 мест.\nДва соседних места: ряд 5, места 7 и 8. Цена билетов — 4 400 ₽. На следующем шаге сервисный сбор — 400 ₽. Итого — 4 800 ₽.\nВыбраны: два билета, ряд 5, места 7 и 8. Следующий шаг — проверить заказ. Оплата ещё не выполнена.",
+            "event_ids": [
+              "ira-first:e3"
+            ]
+          }
+        ]
+      },
+      "feedback": {
+        "outcome": "success",
+        "rating": 8,
+        "return_intent": true,
+        "summary": "Выбор сделан быстро, но полная сумма появилась только после выбора мест.",
+        "evidence_ids": [
+          "ira-first:e3"
+        ],
+        "assessment": {
+          "satisfaction": 4,
+          "effort": 2,
+          "purpose_clear": true,
+          "next_step_clear": true,
+          "result_clear": true,
+          "evidence_ids": [
+            "ira-first:e3"
+          ]
+        },
+        "journey": [
+          {
+            "stage": "entry",
+            "reached": true,
+            "note": "Выбор сделан быстро, но полная сумма появилась только после выбора мест.",
+            "evidence_ids": [
+              "ira-first:e3"
+            ]
+          },
+          {
+            "stage": "start",
+            "reached": true,
+            "note": "Выбор сделан быстро, но полная сумма появилась только после выбора мест.",
+            "evidence_ids": [
+              "ira-first:e3"
+            ]
+          },
+          {
+            "stage": "action",
+            "reached": true,
+            "note": "Выбор сделан быстро, но полная сумма появилась только после выбора мест.",
+            "evidence_ids": [
+              "ira-first:e3"
+            ]
+          },
+          {
+            "stage": "result",
+            "reached": true,
+            "note": "Выбор сделан быстро, но полная сумма появилась только после выбора мест.",
+            "evidence_ids": [
+              "ira-first:e3"
+            ]
+          }
+        ],
+        "likes": [
+          "События удобно сравнивать в одном месте."
+        ],
+        "dislikes": [
+          "В списке видна цена билетов, а сбор добавляется только на проверке заказа."
+        ],
+        "recommendations": [
+          {
+            "issue_key": "upfront_total",
+            "scope": "product",
+            "stage": "action",
+            "change": "Показывать полную цену до выбора мест.",
+            "reason": "Поздний сбор заставляет перепроверять бюджет или начинать выбор заново.",
+            "observed": "В списке видна цена билетов, а сбор добавляется только на проверке заказа.",
+            "proposed": "Показывать стоимость за нужное число билетов вместе со сбором и фильтровать по итоговой сумме.",
+            "expected_metric": "Доля сценариев, где выбор укладывается в общий бюджет.",
+            "how_to_verify": "Повторить выбор с фиксированным бюджетом. Сумма в списке и перед оплатой должна совпадать.",
+            "evidence_ids": [
+              "ira-first:e3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sasha-first",
+      "persona_id": "sasha",
+      "mode": "first_use",
+      "model": "fixture/scripted-persona",
+      "status": "completed",
+      "events": [
+        {
+          "id": "sasha-first:e1",
+          "action": {
+            "type": "click",
+            "target": "send"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/sasha",
+            "title": "Seatly · демонстрационный продукт",
+            "text": "Хочу два соседних места на концерт «Вечер джаза». Выбери ряд поближе к сцене и покажи, что выбрано. Пока без оплаты.",
+            "task_state": "running",
+            "viewport": {
+              "width": 1360,
+              "height": 900
+            },
+            "elements": [
+              {
+                "id": "send",
+                "role": "button",
+                "name": "Отправить"
+              }
+            ]
+          },
+          "result": {
+            "status": "ok",
+            "task_started": true
+          }
+        },
+        {
+          "id": "sasha-first:e2",
+          "action": {
+            "type": "observe"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/sasha",
+            "title": "Результат выбора",
+            "text": "Готово.\nСобытия\nВечер джаза · суббота · 19:30\nФортепианный вечер · суббота · 20:00\nНайти событие",
+            "task_state": "completed",
+            "elements": []
+          },
+          "result": {
+            "status": "ok",
+            "task_completed": true
+          }
+        }
+      ],
+      "task_started": true,
+      "task_completed": true,
+      "task_started_event_id": "sasha-first:e1",
+      "task_completed_event_id": "sasha-first:e2",
+      "conversation_url": "https://seatly.example/chat/sasha",
+      "transcript": {
+        "source": "authored_demo_fixture",
+        "capture_status": "complete",
+        "product_name": "Seatly",
+        "capture_note": "Авторский пример. Все сообщения, действия и оценки вымышлены; реальный продукт не тестировался.",
+        "messages": [
+          {
+            "role": "user",
+            "text": "Хочу два соседних места на концерт «Вечер джаза». Выбери ряд поближе к сцене и покажи, что выбрано. Пока без оплаты.",
+            "event_ids": [
+              "sasha-first:e1"
+            ]
+          },
+          {
+            "role": "assistant",
+            "text": "Готово.",
+            "event_ids": [
+              "sasha-first:e2"
+            ]
+          }
+        ]
+      },
+      "feedback": {
+        "outcome": "partial",
+        "rating": 5,
+        "return_intent": false,
+        "summary": "После выбора мест непонятно, сохранились ли они и как продолжить.",
+        "evidence_ids": [
+          "sasha-first:e2"
+        ],
+        "assessment": {
+          "satisfaction": 2,
+          "effort": 4,
+          "purpose_clear": true,
+          "next_step_clear": false,
+          "result_clear": false,
+          "evidence_ids": [
+            "sasha-first:e2"
+          ]
+        },
+        "journey": [
+          {
+            "stage": "entry",
+            "reached": true,
+            "note": "После выбора мест непонятно, сохранились ли они и как продолжить.",
+            "evidence_ids": [
+              "sasha-first:e2"
+            ]
+          },
+          {
+            "stage": "start",
+            "reached": true,
+            "note": "После выбора мест непонятно, сохранились ли они и как продолжить.",
+            "evidence_ids": [
+              "sasha-first:e2"
+            ]
+          },
+          {
+            "stage": "action",
+            "reached": true,
+            "note": "После выбора мест непонятно, сохранились ли они и как продолжить.",
+            "evidence_ids": [
+              "sasha-first:e2"
+            ]
+          },
+          {
+            "stage": "result",
+            "reached": false,
+            "note": "После выбора мест непонятно, сохранились ли они и как продолжить.",
+            "evidence_ids": [
+              "sasha-first:e2"
+            ]
+          }
+        ],
+        "likes": [],
+        "dislikes": [
+          "После действия нет заметной карточки сохранённого выбора; приходится искать продолжение."
+        ],
+        "recommendations": [
+          {
+            "issue_key": "selection_confirmation",
+            "scope": "product",
+            "stage": "result",
+            "change": "После выбора показывать итог и следующий шаг.",
+            "reason": "Без итога пользователь не понимает, сохранился ли результат и где его продолжить.",
+            "observed": "После действия нет заметной карточки сохранённого выбора; приходится искать продолжение.",
+            "proposed": "Оставлять на экране выбранное событие, места и сумму; показывать «Продолжить» и «Изменить выбор».",
+            "expected_metric": "Доля пользователей, правильно объяснивших результат действия.",
+            "how_to_verify": "После выбора проверить, может ли агент назвать выбранное событие и продолжить без повторного поиска.",
+            "evidence_ids": [
+              "sasha-first:e2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "dasha-first",
+      "persona_id": "dasha",
+      "mode": "first_use",
+      "model": "fixture/scripted-persona",
+      "status": "completed",
+      "events": [
+        {
+          "id": "dasha-first:e1",
+          "action": {
+            "type": "click",
+            "target": "send"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/dasha",
+            "title": "Seatly · демонстрационный продукт",
+            "text": "Подбери два билета на концерт в субботу. Общий бюджет — 5 000 ₽, включая все сборы. Покажи итоговую цену сразу.",
+            "task_state": "running",
+            "viewport": {
+              "width": 390,
+              "height": 900
+            },
+            "elements": [
+              {
+                "id": "send",
+                "role": "button",
+                "name": "Отправить"
+              }
+            ]
+          },
+          "result": {
+            "status": "ok",
+            "task_started": true
+          }
+        },
+        {
+          "id": "dasha-first:e2",
+          "action": {
+            "type": "click",
+            "target": "choose-seats"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/dasha",
+            "title": "Места на концерт",
+            "text": "Вечер джаза\nДва билета — 4 800 ₽\nВыбрать места",
+            "elements": [
+              {
+                "id": "choose-seats",
+                "role": "button",
+                "name": "Выбрать места"
+              }
+            ]
+          },
+          "result": {
+            "status": "ok"
+          }
+        },
+        {
+          "id": "dasha-first:e3",
+          "action": {
+            "type": "observe"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/dasha",
+            "title": "Результат выбора",
+            "text": "«Вечер джаза», суббота, 19:30. Два билета по 2 400 ₽ — 4 800 ₽.\nНа шаге проверки заказа добавлен сервисный сбор 480 ₽. Итого — 5 280 ₽. Это больше указанного общего бюджета.\nВыбор можно изменить, вернувшись к списку мест.",
+            "task_state": "completed",
+            "elements": []
+          },
+          "result": {
+            "status": "ok",
+            "task_completed": true
+          }
+        }
+      ],
+      "task_started": true,
+      "task_completed": true,
+      "task_started_event_id": "dasha-first:e1",
+      "task_completed_event_id": "dasha-first:e3",
+      "conversation_url": "https://seatly.example/chat/dasha",
+      "transcript": {
+        "source": "authored_demo_fixture",
+        "capture_status": "complete",
+        "product_name": "Seatly",
+        "capture_note": "Авторский пример. Все сообщения, действия и оценки вымышлены; реальный продукт не тестировался.",
+        "messages": [
+          {
+            "role": "user",
+            "text": "Подбери два билета на концерт в субботу. Общий бюджет — 5 000 ₽, включая все сборы. Покажи итоговую цену сразу.",
+            "event_ids": [
+              "dasha-first:e1"
+            ]
+          },
+          {
+            "role": "assistant",
+            "text": "«Вечер джаза», суббота, 19:30. Два билета по 2 400 ₽ — 4 800 ₽.\nНа шаге проверки заказа добавлен сервисный сбор 480 ₽. Итого — 5 280 ₽. Это больше указанного общего бюджета.\nВыбор можно изменить, вернувшись к списку мест.",
+            "event_ids": [
+              "dasha-first:e3"
+            ]
+          }
+        ]
+      },
+      "feedback": {
+        "outcome": "partial",
+        "rating": 6,
+        "return_intent": false,
+        "summary": "Сервисный сбор появился поздно; итог превысил заданный бюджет.",
+        "evidence_ids": [
+          "dasha-first:e3"
+        ],
+        "assessment": {
+          "satisfaction": 2,
+          "effort": 4,
+          "purpose_clear": true,
+          "next_step_clear": true,
+          "result_clear": true,
+          "evidence_ids": [
+            "dasha-first:e3"
+          ]
+        },
+        "journey": [
+          {
+            "stage": "entry",
+            "reached": true,
+            "note": "Сервисный сбор появился поздно; итог превысил заданный бюджет.",
+            "evidence_ids": [
+              "dasha-first:e3"
+            ]
+          },
+          {
+            "stage": "start",
+            "reached": true,
+            "note": "Сервисный сбор появился поздно; итог превысил заданный бюджет.",
+            "evidence_ids": [
+              "dasha-first:e3"
+            ]
+          },
+          {
+            "stage": "action",
+            "reached": true,
+            "note": "Сервисный сбор появился поздно; итог превысил заданный бюджет.",
+            "evidence_ids": [
+              "dasha-first:e3"
+            ]
+          },
+          {
+            "stage": "result",
+            "reached": false,
+            "note": "Сервисный сбор появился поздно; итог превысил заданный бюджет.",
+            "evidence_ids": [
+              "dasha-first:e3"
+            ]
+          }
+        ],
+        "likes": [],
+        "dislikes": [
+          "В списке видна цена билетов, а сбор добавляется только на проверке заказа."
+        ],
+        "recommendations": [
+          {
+            "issue_key": "upfront_total",
+            "scope": "product",
+            "stage": "action",
+            "change": "Показывать полную цену до выбора мест.",
+            "reason": "Поздний сбор заставляет перепроверять бюджет или начинать выбор заново.",
+            "observed": "В списке видна цена билетов, а сбор добавляется только на проверке заказа.",
+            "proposed": "Показывать стоимость за нужное число билетов вместе со сбором и фильтровать по итоговой сумме.",
+            "expected_metric": "Доля сценариев, где выбор укладывается в общий бюджет.",
+            "how_to_verify": "Повторить выбор с фиксированным бюджетом. Сумма в списке и перед оплатой должна совпадать.",
+            "evidence_ids": [
+              "dasha-first:e3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "maksim-first",
+      "persona_id": "maksim",
+      "mode": "first_use",
+      "model": "fixture/scripted-persona",
+      "status": "completed",
+      "events": [
+        {
+          "id": "maksim-first:e1",
+          "action": {
+            "type": "click",
+            "target": "send"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/maksim",
+            "title": "Seatly · демонстрационный продукт",
+            "text": "Сравни два варианта мест на «Вечер джаза». Мне важны итоговая цена за двоих и условия возврата, до оплаты.",
+            "task_state": "running",
+            "viewport": {
+              "width": 1360,
+              "height": 900
+            },
+            "elements": [
+              {
+                "id": "send",
+                "role": "button",
+                "name": "Отправить"
+              }
+            ]
+          },
+          "result": {
+            "status": "ok",
+            "task_started": true
+          }
+        },
+        {
+          "id": "maksim-first:e2",
+          "action": {
+            "type": "click",
+            "target": "choose-seats"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/maksim",
+            "title": "Места на концерт",
+            "text": "Вечер джаза\nДва билета — 4 400 ₽\nВыбрать места",
+            "elements": [
+              {
+                "id": "choose-seats",
+                "role": "button",
+                "name": "Выбрать места"
+              }
+            ]
+          },
+          "result": {
+            "status": "ok"
+          }
+        },
+        {
+          "id": "maksim-first:e3",
+          "action": {
+            "type": "observe"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/maksim",
+            "title": "Результат выбора",
+            "text": "Вариант А: ряд 5 — 4 400 ₽ за два билета, сбор 400 ₽, итого 4 800 ₽.\nВариант Б: ряд 3 — 5 200 ₽ за два билета, сбор 400 ₽, итого 5 600 ₽.\nПолная сумма отображается на проверке заказа; в списке указана только цена билетов. Оба варианта допускают возврат по условиям организатора, которые открываются отдельной ссылкой.\nВыбран вариант А. Следующий шаг — проверить заказ; оплата не выполнялась.",
+            "task_state": "completed",
+            "elements": []
+          },
+          "result": {
+            "status": "ok",
+            "task_completed": true
+          }
+        }
+      ],
+      "task_started": true,
+      "task_completed": true,
+      "task_started_event_id": "maksim-first:e1",
+      "task_completed_event_id": "maksim-first:e3",
+      "conversation_url": "https://seatly.example/chat/maksim",
+      "transcript": {
+        "source": "authored_demo_fixture",
+        "capture_status": "complete",
+        "product_name": "Seatly",
+        "capture_note": "Авторский пример. Все сообщения, действия и оценки вымышлены; реальный продукт не тестировался.",
+        "messages": [
+          {
+            "role": "user",
+            "text": "Сравни два варианта мест на «Вечер джаза». Мне важны итоговая цена за двоих и условия возврата, до оплаты.",
+            "event_ids": [
+              "maksim-first:e1"
+            ]
+          },
+          {
+            "role": "assistant",
+            "text": "Вариант А: ряд 5 — 4 400 ₽ за два билета, сбор 400 ₽, итого 4 800 ₽.\nВариант Б: ряд 3 — 5 200 ₽ за два билета, сбор 400 ₽, итого 5 600 ₽.\nПолная сумма отображается на проверке заказа; в списке указана только цена билетов. Оба варианта допускают возврат по условиям организатора, которые открываются отдельной ссылкой.\nВыбран вариант А. Следующий шаг — проверить заказ; оплата не выполнялась.",
+            "event_ids": [
+              "maksim-first:e3"
+            ]
+          }
+        ]
+      },
+      "feedback": {
+        "outcome": "success",
+        "rating": 8,
+        "return_intent": true,
+        "summary": "Варианты удалось сравнить, но итоговая цена потребовала дополнительного шага.",
+        "evidence_ids": [
+          "maksim-first:e3"
+        ],
+        "assessment": {
+          "satisfaction": 4,
+          "effort": 2,
+          "purpose_clear": true,
+          "next_step_clear": true,
+          "result_clear": true,
+          "evidence_ids": [
+            "maksim-first:e3"
+          ]
+        },
+        "journey": [
+          {
+            "stage": "entry",
+            "reached": true,
+            "note": "Варианты удалось сравнить, но итоговая цена потребовала дополнительного шага.",
+            "evidence_ids": [
+              "maksim-first:e3"
+            ]
+          },
+          {
+            "stage": "start",
+            "reached": true,
+            "note": "Варианты удалось сравнить, но итоговая цена потребовала дополнительного шага.",
+            "evidence_ids": [
+              "maksim-first:e3"
+            ]
+          },
+          {
+            "stage": "action",
+            "reached": true,
+            "note": "Варианты удалось сравнить, но итоговая цена потребовала дополнительного шага.",
+            "evidence_ids": [
+              "maksim-first:e3"
+            ]
+          },
+          {
+            "stage": "result",
+            "reached": true,
+            "note": "Варианты удалось сравнить, но итоговая цена потребовала дополнительного шага.",
+            "evidence_ids": [
+              "maksim-first:e3"
+            ]
+          }
+        ],
+        "likes": [
+          "События удобно сравнивать в одном месте."
+        ],
+        "dislikes": [
+          "В списке видна цена билетов, а сбор добавляется только на проверке заказа."
+        ],
+        "recommendations": [
+          {
+            "issue_key": "upfront_total",
+            "scope": "product",
+            "stage": "action",
+            "change": "Показывать полную цену до выбора мест.",
+            "reason": "Поздний сбор заставляет перепроверять бюджет или начинать выбор заново.",
+            "observed": "В списке видна цена билетов, а сбор добавляется только на проверке заказа.",
+            "proposed": "Показывать стоимость за нужное число билетов вместе со сбором и фильтровать по итоговой сумме.",
+            "expected_metric": "Доля сценариев, где выбор укладывается в общий бюджет.",
+            "how_to_verify": "Повторить выбор с фиксированным бюджетом. Сумма в списке и перед оплатой должна совпадать.",
+            "evidence_ids": [
+              "maksim-first:e3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "lena-first",
+      "persona_id": "lena",
+      "mode": "first_use",
+      "model": "fixture/scripted-persona",
+      "status": "completed",
+      "events": [
+        {
+          "id": "lena-first:e1",
+          "action": {
+            "type": "click",
+            "target": "send"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/lena",
+            "title": "Seatly · демонстрационный продукт",
+            "text": "Подбери два места на джазовый концерт и сохрани выбор, чтобы я могла обсудить его и вернуться позже.",
+            "task_state": "running",
+            "viewport": {
+              "width": 390,
+              "height": 900
+            },
+            "elements": [
+              {
+                "id": "send",
+                "role": "button",
+                "name": "Отправить"
+              }
+            ]
+          },
+          "result": {
+            "status": "ok",
+            "task_started": true
+          }
+        },
+        {
+          "id": "lena-first:e2",
+          "action": {
+            "type": "observe"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/lena",
+            "title": "Результат выбора",
+            "text": "Выбор сохранён: «Вечер джаза», суббота, 19:30, ряд 5, места 9 и 10.\nДва билета — 4 400 ₽, сервисный сбор — 400 ₽. Итого — 4 800 ₽.\nВернуться к выбору можно в разделе «Сохранённое». Оплата не выполнена; наличие мест может измениться.",
+            "task_state": "completed",
+            "elements": []
+          },
+          "result": {
+            "status": "ok",
+            "task_completed": true
+          }
+        }
+      ],
+      "task_started": true,
+      "task_completed": true,
+      "task_started_event_id": "lena-first:e1",
+      "task_completed_event_id": "lena-first:e2",
+      "conversation_url": "https://seatly.example/chat/lena",
+      "transcript": {
+        "source": "authored_demo_fixture",
+        "capture_status": "complete",
+        "product_name": "Seatly",
+        "capture_note": "Авторский пример. Все сообщения, действия и оценки вымышлены; реальный продукт не тестировался.",
+        "messages": [
+          {
+            "role": "user",
+            "text": "Подбери два места на джазовый концерт и сохрани выбор, чтобы я могла обсудить его и вернуться позже.",
+            "event_ids": [
+              "lena-first:e1"
+            ]
+          },
+          {
+            "role": "assistant",
+            "text": "Выбор сохранён: «Вечер джаза», суббота, 19:30, ряд 5, места 9 и 10.\nДва билета — 4 400 ₽, сервисный сбор — 400 ₽. Итого — 4 800 ₽.\nВернуться к выбору можно в разделе «Сохранённое». Оплата не выполнена; наличие мест может измениться.",
+            "event_ids": [
+              "lena-first:e2"
+            ]
+          }
+        ]
+      },
+      "feedback": {
+        "outcome": "success",
+        "rating": 9,
+        "return_intent": true,
+        "summary": "Выбор сохранён; понятны итоговая сумма и способ вернуться.",
+        "evidence_ids": [
+          "lena-first:e2"
+        ],
+        "assessment": {
+          "satisfaction": 5,
+          "effort": 2,
+          "purpose_clear": true,
+          "next_step_clear": true,
+          "result_clear": true,
+          "evidence_ids": [
+            "lena-first:e2"
+          ]
+        },
+        "journey": [
+          {
+            "stage": "entry",
+            "reached": true,
+            "note": "Выбор сохранён; понятны итоговая сумма и способ вернуться.",
+            "evidence_ids": [
+              "lena-first:e2"
+            ]
+          },
+          {
+            "stage": "start",
+            "reached": true,
+            "note": "Выбор сохранён; понятны итоговая сумма и способ вернуться.",
+            "evidence_ids": [
+              "lena-first:e2"
+            ]
+          },
+          {
+            "stage": "action",
+            "reached": true,
+            "note": "Выбор сохранён; понятны итоговая сумма и способ вернуться.",
+            "evidence_ids": [
+              "lena-first:e2"
+            ]
+          },
+          {
+            "stage": "result",
+            "reached": true,
+            "note": "Выбор сохранён; понятны итоговая сумма и способ вернуться.",
+            "evidence_ids": [
+              "lena-first:e2"
+            ]
+          }
+        ],
+        "likes": [
+          "События удобно сравнивать в одном месте."
+        ],
+        "dislikes": [],
+        "recommendations": []
+      }
+    },
+    {
+      "id": "oleg-first",
+      "persona_id": "oleg",
+      "mode": "first_use",
+      "model": "fixture/scripted-persona",
+      "status": "completed",
+      "events": [
+        {
+          "id": "oleg-first:e1",
+          "action": {
+            "type": "click",
+            "target": "send"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/oleg",
+            "title": "Seatly · демонстрационный продукт",
+            "text": "Сравни камерный джаз и фортепианный концерт в субботу. Сохрани оба варианта, решение приму позже.",
+            "task_state": "running",
+            "viewport": {
+              "width": 1360,
+              "height": 900
+            },
+            "elements": [
+              {
+                "id": "send",
+                "role": "button",
+                "name": "Отправить"
+              }
+            ]
+          },
+          "result": {
+            "status": "ok",
+            "task_started": true
+          }
+        },
+        {
+          "id": "oleg-first:e2",
+          "action": {
+            "type": "observe"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/oleg",
+            "title": "Результат выбора",
+            "text": "Подборка сохранена.\nСобытия\nВечер джаза · от 2 200 ₽\nФортепианный вечер · от 1 800 ₽\nСохранённое",
+            "task_state": "completed",
+            "elements": []
+          },
+          "result": {
+            "status": "ok",
+            "task_completed": true
+          }
+        }
+      ],
+      "task_started": true,
+      "task_completed": true,
+      "task_started_event_id": "oleg-first:e1",
+      "task_completed_event_id": "oleg-first:e2",
+      "conversation_url": "https://seatly.example/chat/oleg",
+      "transcript": {
+        "source": "authored_demo_fixture",
+        "capture_status": "complete",
+        "product_name": "Seatly",
+        "capture_note": "Авторский пример. Все сообщения, действия и оценки вымышлены; реальный продукт не тестировался.",
+        "messages": [
+          {
+            "role": "user",
+            "text": "Сравни камерный джаз и фортепианный концерт в субботу. Сохрани оба варианта, решение приму позже.",
+            "event_ids": [
+              "oleg-first:e1"
+            ]
+          },
+          {
+            "role": "assistant",
+            "text": "Подборка сохранена.",
+            "event_ids": [
+              "oleg-first:e2"
+            ]
+          }
+        ]
+      },
+      "feedback": {
+        "outcome": "success",
+        "rating": 9,
+        "return_intent": true,
+        "summary": "Подборка сохранена, но короткое «Готово» не объясняет, где она находится.",
+        "evidence_ids": [
+          "oleg-first:e2"
+        ],
+        "assessment": {
+          "satisfaction": 4,
+          "effort": 2,
+          "purpose_clear": true,
+          "next_step_clear": true,
+          "result_clear": false,
+          "evidence_ids": [
+            "oleg-first:e2"
+          ]
+        },
+        "journey": [
+          {
+            "stage": "entry",
+            "reached": true,
+            "note": "Подборка сохранена, но короткое «Готово» не объясняет, где она находится.",
+            "evidence_ids": [
+              "oleg-first:e2"
+            ]
+          },
+          {
+            "stage": "start",
+            "reached": true,
+            "note": "Подборка сохранена, но короткое «Готово» не объясняет, где она находится.",
+            "evidence_ids": [
+              "oleg-first:e2"
+            ]
+          },
+          {
+            "stage": "action",
+            "reached": true,
+            "note": "Подборка сохранена, но короткое «Готово» не объясняет, где она находится.",
+            "evidence_ids": [
+              "oleg-first:e2"
+            ]
+          },
+          {
+            "stage": "result",
+            "reached": true,
+            "note": "Подборка сохранена, но короткое «Готово» не объясняет, где она находится.",
+            "evidence_ids": [
+              "oleg-first:e2"
+            ]
+          }
+        ],
+        "likes": [
+          "События удобно сравнивать в одном месте."
+        ],
+        "dislikes": [
+          "После действия нет заметной карточки сохранённого выбора; приходится искать продолжение."
+        ],
+        "recommendations": [
+          {
+            "issue_key": "selection_confirmation",
+            "scope": "product",
+            "stage": "result",
+            "change": "После выбора показывать итог и следующий шаг.",
+            "reason": "Без итога пользователь не понимает, сохранился ли результат и где его продолжить.",
+            "observed": "После действия нет заметной карточки сохранённого выбора; приходится искать продолжение.",
+            "proposed": "Оставлять на экране выбранное событие, места и сумму; показывать «Продолжить» и «Изменить выбор».",
+            "expected_metric": "Доля пользователей, правильно объяснивших результат действия.",
+            "how_to_verify": "После выбора проверить, может ли агент назвать выбранное событие и продолжить без повторного поиска.",
+            "evidence_ids": [
+              "oleg-first:e2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "lena-resume",
+      "persona_id": "lena",
+      "mode": "resume",
+      "model": "fixture/scripted-persona",
+      "status": "completed",
+      "task_started": false,
+      "task_completed": true,
+      "conversation_url": "https://seatly.example/chat/lena",
+      "events": [
+        {
+          "id": "lena-resume:e1",
+          "action": {
+            "type": "click",
+            "target": "saved"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/lena",
+            "text": "Продолжим сохранённый выбор. Покажи, что было выбрано, и как перейти к проверке заказа. Пока без оплаты.",
+            "title": "Сохранённое",
+            "elements": []
+          },
+          "result": {
+            "status": "ok"
+          }
+        },
+        {
+          "id": "lena-resume:e2",
+          "action": {
+            "type": "observe"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/lena",
+            "text": "Сохранённый выбор открыт: «Вечер джаза», суббота, 19:30. Ряд 5, места 9 и 10. Итого — 4 800 ₽ со сбором. Следующий шаг — «Проверить заказ». Оплата не выполнялась.",
+            "title": "Продолжение выбора",
+            "elements": []
+          },
+          "result": {
+            "status": "ok"
+          }
+        }
+      ],
+      "transcript": {
+        "source": "authored_demo_fixture",
+        "capture_status": "complete",
+        "product_name": "Seatly",
+        "capture_note": "Авторская демонстрация продолжения; между визитами не проходили реальные дни.",
+        "messages": [
+          {
+            "role": "user",
+            "text": "Продолжим сохранённый выбор. Покажи, что было выбрано, и как перейти к проверке заказа. Пока без оплаты.",
+            "event_ids": [
+              "lena-resume:e1"
+            ]
+          },
+          {
+            "role": "assistant",
+            "text": "Сохранённый выбор открыт: «Вечер джаза», суббота, 19:30. Ряд 5, места 9 и 10. Итого — 4 800 ₽ со сбором. Следующий шаг — «Проверить заказ». Оплата не выполнялась.",
+            "event_ids": [
+              "lena-resume:e2"
+            ]
+          }
+        ]
+      },
+      "feedback": {
+        "outcome": "success",
+        "rating": 9,
+        "return_intent": true,
+        "summary": "Сохранённый выбор найден; повторный поиск не понадобился.",
+        "evidence_ids": [
+          "lena-resume:e2"
+        ],
+        "assessment": {
+          "satisfaction": 5,
+          "effort": 1,
+          "purpose_clear": true,
+          "next_step_clear": true,
+          "result_clear": true,
+          "evidence_ids": [
+            "lena-resume:e2"
+          ]
+        },
+        "likes": [
+          "Сохранённый выбор помогает продолжить без повторного поиска."
+        ],
+        "dislikes": [],
+        "recommendations": [],
+        "journey": [
+          {
+            "stage": "return",
+            "reached": true,
+            "note": "Выбор восстановлен.",
+            "evidence_ids": [
+              "lena-resume:e2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "oleg-resume",
+      "persona_id": "oleg",
+      "mode": "resume",
+      "model": "fixture/scripted-persona",
+      "status": "completed",
+      "task_started": false,
+      "task_completed": true,
+      "conversation_url": "https://seatly.example/chat/oleg",
+      "events": [
+        {
+          "id": "oleg-resume:e1",
+          "action": {
+            "type": "click",
+            "target": "saved"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/oleg",
+            "text": "Продолжим сохранённый выбор. Покажи, что было выбрано, и как перейти к проверке заказа. Пока без оплаты.",
+            "title": "Сохранённое",
+            "elements": []
+          },
+          "result": {
+            "status": "ok"
+          }
+        },
+        {
+          "id": "oleg-resume:e2",
+          "action": {
+            "type": "observe"
+          },
+          "observation": {
+            "url": "https://seatly.example/chat/oleg",
+            "text": "Сохранённый выбор открыт: «Вечер джаза», суббота, 19:30. В подборке также остался «Фортепианный вечер». Можно выбрать места на любом из событий. Следующий шаг — «Проверить заказ». Оплата не выполнялась.",
+            "title": "Продолжение выбора",
+            "elements": []
+          },
+          "result": {
+            "status": "ok"
+          }
+        }
+      ],
+      "transcript": {
+        "source": "authored_demo_fixture",
+        "capture_status": "complete",
+        "product_name": "Seatly",
+        "capture_note": "Авторская демонстрация продолжения; между визитами не проходили реальные дни.",
+        "messages": [
+          {
+            "role": "user",
+            "text": "Продолжим сохранённый выбор. Покажи, что было выбрано, и как перейти к проверке заказа. Пока без оплаты.",
+            "event_ids": [
+              "oleg-resume:e1"
+            ]
+          },
+          {
+            "role": "assistant",
+            "text": "Сохранённый выбор открыт: «Вечер джаза», суббота, 19:30. В подборке также остался «Фортепианный вечер». Можно выбрать места на любом из событий. Следующий шаг — «Проверить заказ». Оплата не выполнялась.",
+            "event_ids": [
+              "oleg-resume:e2"
+            ]
+          }
+        ]
+      },
+      "feedback": {
+        "outcome": "success",
+        "rating": 9,
+        "return_intent": true,
+        "summary": "Сохранённый выбор найден; повторный поиск не понадобился.",
+        "evidence_ids": [
+          "oleg-resume:e2"
+        ],
+        "assessment": {
+          "satisfaction": 5,
+          "effort": 1,
+          "purpose_clear": true,
+          "next_step_clear": true,
+          "result_clear": true,
+          "evidence_ids": [
+            "oleg-resume:e2"
+          ]
+        },
+        "likes": [
+          "Сохранённый выбор помогает продолжить без повторного поиска."
+        ],
+        "dislikes": [],
+        "recommendations": [],
+        "journey": [
+          {
+            "stage": "return",
+            "reached": true,
+            "note": "Выбор восстановлен.",
+            "evidence_ids": [
+              "oleg-resume:e2"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "ledger": [],
+  "warnings": [
+    "DEMO: authored fixture, no live product or model calls."
+  ],
+  "runtime": {
+    "session_mode": "isolated",
+    "demo": true
+  },
+  "product_synthesis": {
+    "status": "completed",
+    "source": "authored_demo_fixture",
+    "model": null,
+    "fingerprint": "5bd5e28df5b59168eff50b4cc706c683bf620620387088ae65c2a69aee6d67f4",
+    "coverage": {
+      "eligible_sessions": 8,
+      "sampled_sessions": 8,
+      "sampled": false,
+      "evidence_ids": [
+        "ira-first:e3",
+        "ira-first:e1",
+        "ira-first:e2",
+        "sasha-first:e2",
+        "sasha-first:e1",
+        "dasha-first:e3",
+        "dasha-first:e1",
+        "dasha-first:e2",
+        "maksim-first:e3",
+        "maksim-first:e1",
+        "maksim-first:e2",
+        "lena-first:e2",
+        "lena-first:e1",
+        "oleg-first:e2",
+        "oleg-first:e1",
+        "lena-resume:e2",
+        "lena-resume:e1",
+        "oleg-resume:e2",
+        "oleg-resume:e1"
+      ]
+    },
+    "summary": "Покажите полную цену и понятный итог выбора.",
+    "summary_evidence_ids": [
+      "dasha-first:e3",
+      "sasha-first:e2"
+    ],
+    "recommendations": [
+      {
+        "change": "Показывать полную цену до выбора мест.",
+        "reason": "Поздний сбор заставляет перепроверять бюджет или начинать выбор заново.",
+        "observed": "В списке видна цена билетов, а сбор добавляется только на проверке заказа.",
+        "proposed": "Показывать стоимость за нужное число билетов вместе со сбором и фильтровать по итоговой сумме.",
+        "expected_metric": "Доля сценариев, где выбор укладывается в общий бюджет.",
+        "how_to_verify": "Повторить выбор с фиксированным бюджетом. Сумма в списке и перед оплатой должна совпадать.",
+        "issue_key": "upfront_total",
+        "stage": "action",
+        "scope": "product",
+        "hypothesis": true,
+        "evidence_ids": [
+          "ira-first:e3",
+          "dasha-first:e3",
+          "maksim-first:e3"
+        ]
+      },
+      {
+        "change": "После выбора показывать итог и следующий шаг.",
+        "reason": "Без итога пользователь не понимает, сохранился ли результат и где его продолжить.",
+        "observed": "После действия нет заметной карточки сохранённого выбора; приходится искать продолжение.",
+        "proposed": "Оставлять на экране выбранное событие, места и сумму; показывать «Продолжить» и «Изменить выбор».",
+        "expected_metric": "Доля пользователей, правильно объяснивших результат действия.",
+        "how_to_verify": "После выбора проверить, может ли агент назвать выбранное событие и продолжить без повторного поиска.",
+        "issue_key": "selection_confirmation",
+        "stage": "result",
+        "scope": "product",
+        "hypothesis": true,
+        "evidence_ids": [
+          "sasha-first:e2",
+          "oleg-first:e2"
+        ]
+      }
+    ],
+    "positives": [
+      {
+        "title": "Сохранённый выбор помогает продолжить без повторного поиска.",
+        "description": "В вымышленном сценарии подборка доступна при возвращении.",
+        "evidence_ids": [
+          "lena-resume:e2",
+          "oleg-resume:e2"
+        ]
+      }
+    ],
+    "caveats": [
+      "Полностью вымышленная демонстрация; цифры не характеризуют реальный продукт."
+    ],
+    "inference": true
+  }
+}

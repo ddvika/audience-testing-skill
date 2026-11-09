@@ -1,0 +1,22 @@
+name: Bug report
+description: A reproducible runner, report or integration problem
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Expected behavior and observed behavior. Do not include secrets or private study data.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Host, Python version, Audience version, sanitized command and minimal fixture.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Relevant evidence
+      description: Sanitized error text or a synthetic example. Separate product behavior from runner behavior.

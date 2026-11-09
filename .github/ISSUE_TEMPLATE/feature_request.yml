@@ -1,0 +1,15 @@
+name: Feature request
+description: A concrete product-testing workflow to support
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What are you trying to test?
+      description: Describe the product, environment and decision the report should help you make.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: What would change for the person using Audience?
