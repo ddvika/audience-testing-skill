@@ -8,8 +8,7 @@ Give it a website, a research question and a budget. Start with a small pilot or
 
 [Русский](docs/README.ru.md) · [Installation](docs/installation.md) · [Sample report](examples/report.html) · [Report screenshot]([docs/assets/report-screenshot.png](https://github.com/ddvika/audience-testing-skill/blob/main/docs/assets/Изображение%20ChatGPT%209%20нояб.%202026%20г.%2C%2010_42_58.png)) · [How metrics work](skills/audience/references/metrics.md)
 
-[![Audience: AI agents test your product, find where they get stuck, and show what to fix.](docs/assets/audience-cover.png)](examples/report.html)
-
+[![Audience: AI agents test your product, find where they get stuck, and show what to fix.](docs/assets/Изображение%20ChatGPT%209%20нояб.%202026%20г.%2C%2010_42_58.png)](examples/report.html)
 *Download the sample HTML and open it locally to explore the interactive report.*
 
 ## Start with a product question
